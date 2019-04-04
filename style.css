@@ -1,0 +1,111 @@
+body {
+    background: #262626;
+    font-family: Helvetica;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  p, h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #random-table {
+    position: absolute;
+    width: 174px;
+    background: #7799ff;
+    border-radius: 5px;
+  }
+  
+  .clickable-random {
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    background: #000080;
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    cursor: pointer;
+    color: white;
+  
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;       /* the same as your div height */
+    border-radius: 6px;
+  }
+  
+  .clickable-random:active {
+     font-size: 20px;
+  }
+  
+  .clickable-random, .random-group, #random-table {
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+    outline: none;
+  }
+  
+  
+  
+  @keyframes solveAnimation {
+    from {background-color: #000080;}
+    to {background-color: #1e6849;}
+  }
+  
+  .solved {
+    animation: solveAnimation 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .clickable-random:hover {
+    opacity: 0.5;
+  }
+  
+  .random-group {
+    position: relative;
+    height: 40px;
+    width: 1000px;
+    overflow: hidden;
+  }
+  
+  button {
+    background: #0084ff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  #main-container {
+    margin: 0 auto;
+    margin-left: 200px;
+    margin-top: 60px;
+    padding: 15px;
+    background: #112232;
+    width: 270px;
+    height: 500;    
+    border-radius: 20px;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .disabled {
+    background: #333;
+  }
+  
+  button:active {
+     opacity: 0.3;
+  }
+  
+  label {
+    color: white;
+  }
+  
